@@ -127,6 +127,24 @@
     }
   });
 
+  // Hero carousel (uses the Owl Carousel library)
+  $(".hero-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 1
+      },
+      900: {
+        items: 1
+      }
+    }
+  });
+
   // Initi AOS
   $(window).on('load', function() {
     AOS.init({
